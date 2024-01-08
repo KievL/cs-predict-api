@@ -56,7 +56,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS= [
-	"*"
+	"https://*",
+    "http://*"
     
 ]
 

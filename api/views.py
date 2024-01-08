@@ -25,7 +25,7 @@ def api_model(request, *args, **kwargs):
     except:
         return JsonResponse({'error':'Invalid HTML'}, status=400)
 
-    model = joblib.load('api\model.joblib')
+    model = joblib.load('api/model.joblib')
 
     try:
         model_data, match_info = engData(html_scraped)
